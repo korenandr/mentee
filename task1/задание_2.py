@@ -7,19 +7,19 @@ if user_variable.isdigit():
             if int(user_variable) % 2 != 0:
                 print("Вы ввели не четное число,попробуйте ввести код операции 2")
             else:
-                while_variable_1 = int(user_variable)
-                while while_variable_1 >= 0:
-                    print(while_variable_1,end = '.')
-                    while_variable_1 -= 2
+                counter= int(user_variable)
+                while counter >= 0:
+                    print(counter,end = '.')
+                    counter -= 2
         else:
             if int(operation_code) == 2:
                 if int(user_variable) % 2 == 0:
                     print("Вы ввели не четное число,попробуйте ввести код операции 1")
                 else:
-                    while_variable_2 = int(user_variable)
-                    while while_variable_2 >= 0:
-                        print(while_variable_2, end = '.')
-                        while_variable_2 -= 2                           
+                    counter = int(user_variable) 
+                    while counter >= 0:
+                        print(counter, end = '.')
+                        counter -= 2                           
     else:
         print("Не пытайтесь снова меня обмануть!")        
 else:
