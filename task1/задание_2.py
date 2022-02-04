@@ -12,15 +12,14 @@ if user_variable.isdigit():
                     print(while_variable_1,end = '.')
                     while_variable_1 -= 2
         else:
-            if operation_code.isdigit():
-                if int(operation_code) == 2:
-                    if int(user_variable) % 2 == 0:
-                        print("Вы ввели не четное число,попробуйте ввести код операции 1")
-                    else:
-                        while_variable_2 = int(user_variable)
-                        while while_variable_2 >= 0:
-                            print(while_variable_2, end = '.')
-                            while_variable_2 -= 2                           
+            if int(operation_code) == 2:
+                if int(user_variable) % 2 == 0:
+                    print("Вы ввели не четное число,попробуйте ввести код операции 1")
+                else:
+                    while_variable_2 = int(user_variable)
+                    while while_variable_2 >= 0:
+                        print(while_variable_2, end = '.')
+                        while_variable_2 -= 2                           
     else:
         print("Не пытайтесь снова меня обмануть!")        
 else:
