@@ -1,8 +1,12 @@
-i = input("Введите любое число-")
-if i.isdigit():
-    if int(i)%2==0:
-        print(i,"-это четное число")
+counter = 1
+while counter >= 1:
+    counter -= 1
+    try:
+        user_variable = int(input("Введите любое число-"))
+    except:
+        print("Вы ввели не верный тип данных")
+        break
+    if user_variable % 2 == 0:
+        print(user_variable,"-это четное число")
     else:
-        print(i,"-это не четное число")
-else:
-    print("Не пытайтесь меня обмануть!")
+        print(user_variable,"-это не четное число")
