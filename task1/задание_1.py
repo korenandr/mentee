@@ -1,12 +1,14 @@
-counter = 1
-while counter >= 1:
-    counter -= 1
-    try:
-        user_variable = int(input("Введите любое число-"))
-    except:
-        print("Вы ввели не верный тип данных")
-        break
+from ast import Return
+from base64 import encode
+
+
+try:
+    user_variable = int(input("Введите любое число-"))
+except:
+    print("Вы ввели не верный тип данных")
+else:
     if user_variable % 2 == 0:
-        print(user_variable,"-это четное число")
+        print("Вы ввели четное число")
     else:
-        print(user_variable,"-это не четное число")
+        print("Вы ввели не четное число")
+ 
