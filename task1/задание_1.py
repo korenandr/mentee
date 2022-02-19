@@ -1,8 +1,14 @@
-i = input("Введите любое число-")
-if i.isdigit():
-    if int(i)%2==0:
-        print(i,"-это четное число")
-    else:
-        print(i,"-это не четное число")
+from ast import Return
+from base64 import encode
+
+
+try:
+    user_variable = int(input("Введите любое число-"))
+except:
+    print("Вы ввели не верный тип данных")
 else:
-    print("Не пытайтесь меня обмануть!")
+    if user_variable % 2 == 0:
+        print("Вы ввели четное число")
+    else:
+        print("Вы ввели не четное число")
+ 
