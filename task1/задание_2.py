@@ -5,19 +5,13 @@ try:
 except:
     print("Вы ввели не верные параметры")
 else:
-    list = []
-    for tmp in range(min_range,max_range):
-        if tmp != max_range:
-            list.append(tmp)
+    if operation_code == 0:
+        for tmp in range(min_range,max_range):
+            if tmp % 2 == 0:
+                print(tmp,end = ' ')
+    elif operation_code == 1:
+        for tmp in range(min_range,max_range):
+            if tmp % 2 != 0:
+                print(tmp,end = ' ')
     else:
-        if operation_code == 0:
-            for tmp in list:
-                if tmp % 2 == 0:
-                    print(tmp,end = ' ')
-        else:
-            if operation_code == 1:
-                for tmp in list:
-                    if tmp % 2 != 0:
-                        print(tmp,end = ' ')
-            else:
-                print("Вы ввели не верный код операции")
+        print("Вы ввели не верный код операции")
