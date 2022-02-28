@@ -9,10 +9,9 @@ else:
         for tmp in list:
             if number < tmp:
                 print (tmp,end = ' ')
+    elif operation_cod == 0:
+        for tmp in list:
+            if number > tmp:
+                print (tmp,end = ' ')
     else:
-        if operation_cod == 0:
-            for tmp in list:
-                if number > tmp:
-                    print (tmp,end = ' ')
-        else:
-            print("Вы ввели не верный тип данных")
+        print("Вы ввели не верный код операции")
