@@ -12,8 +12,7 @@ while counter >= 1:
     if user_variable == random_number:
         print("Вы отгадали,я загадала число-",random_number)
         break
+    elif user_variable < random_number:
+        print("Я загадал число больше чем ваше")
     else:
-        if user_variable < random_number:
-            print("Я загадал число больше чем ваше")
-        else:
-            print("Я загадала число меньше чем ваше")
+        print("Я загадала число меньше чем ваше")
